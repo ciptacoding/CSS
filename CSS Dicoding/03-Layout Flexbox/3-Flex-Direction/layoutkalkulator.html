@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Layout Calculator</title>
+    <style>
+        .container{/* styling pada container */
+            display: flex; /* tampilan menjadi flexible */
+            flex-direction: column;/* merubah tampilan flex menjadi colomn */
+            height: 300px;/* tinggi container */
+            width: 800px;/* lebar container */
+            background-color: aquamarine;/* warna latar */
+            border: 5px solid #222;/* ketebalan, tipe border, warna */
+            border-radius: 10px;/* rounded corner */
+            margin: 0 auto;/* posisi container di tengah */
+            padding: 5px;/* jarak didalam elemen container */
+        }
+        .flexRow{/* styling pada flexRow */
+            display: flex;/* tampilan menjadi flexible */
+            flex-direction: row;/* merubah tanpilan flex menjadi baris */
+            border: 4px solid #222;/* ketebalan, tipe border, warna */
+            background-color: yellow;/* warna latar flexRow */
+            flex-grow: 1;/* ukuran flex-item akan menyesuaikan parentnya */
+            margin: 10px;/* jarak antara flexRow dengan container */
+            padding: 10px;/* jarak antar elemen didalam flexRow */
+            border-radius: 10px;/* corner rounded */
+        }
+        .box{/* styling pada elemen box */
+            border: 3px solid #222;/* ketebelan, tipe border, warna */
+            background-color: crimson;/* warna latar */
+            flex-grow: 1;/* ukuran box akan menyesuaikan parentnya */
+            margin: 15px;/* jarak antara box dengan flexRow */
+            border-radius: 5px;/* corner rounded */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flexRow">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="flexRow">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+</body>
+</html>

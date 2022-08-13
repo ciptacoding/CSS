@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Radial-Gradient</title>
+    <style>
+        .nol{
+            height: 300px;
+            width: 500px;
+            margin: auto;
+            background: radial-gradient(circle closest-corner, blue 30%, red);/*bisa lebih dari 2 warna*/
+        }
+        .satu{
+            height: 300px;
+            width: 500px;
+            margin: 50px auto;
+            background: radial-gradient(ellipse farthest-side at top left, blue ,green);
+            /*radial-graident : tipe, jangkauan, posisi x-y, warna*/
+        }
+    </style>
+</head>
+<body>
+    <div class="nol"></div>
+    <div class="satu"></div>
+</body>
+</html>

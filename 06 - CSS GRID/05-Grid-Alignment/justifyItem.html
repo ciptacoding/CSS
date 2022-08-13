@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Justify Item</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 150px);
+        gap: 10px;
+        justify-items: center;
+        /* justify-items: start; */
+        /* justify-items: end; */
+        /* justify-items: stretch;(berlaku ketika tidak diberi width) */
+      }
+      .item1,
+      .item3,
+      .item5 {
+        width: 150px;
+        height: 100px;
+        background-color: blue;
+      }
+      .item2,
+      .item4,
+      .item6 {
+        width: 130px;
+        height: 110px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item1">1</div>
+      <div class="item2">1</div>
+      <div class="item3">1</div>
+      <div class="item4">1</div>
+      <div class="item5">1</div>
+      <div class="item6">1</div>
+    </div>
+  </body>
+</html>

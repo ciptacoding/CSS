@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Flex Basis</title>
+    <style>
+        *{
+            box-sizing: border-box;/* ukuran tiap-tiap elemen menggunakan border box */
+        }
+        .container{/* styling pada container */
+            width: 800px;/* lebaar container */
+            border: 2px solid black;/* ketebalan, tipe border, warna */
+            margin: 0 auto;/* margin 0 dan posisi container ditengah */
+            background-color: black;/* warna latar container hitam */
+        }
+        .flex-colomn{/* styling pada class flex-column */
+            display: flex;/* tampilan flexible */
+            flex-direction: column;/* merubah tampilan flex menjadi column atau kebawah */
+        }
+        .flex-row{/* styling pada flex-row */
+            display: flex;/* tampilan flexible */
+            flex-direction: row;/* merubah tampilan flex menjadi column */
+            flex-grow: 1;/* ukuran baris flex-row menyesuaikan parentnya */
+        }
+        .box{/* styling pada class box */
+            flex-basis: 25%;/* membagi ukuran flex item sesuai dengan parentnya */
+            background-color: cornflowerblue;/* warna latar */
+            border: 2px solid black;/* ketebalan, tipe border, warna */
+            text-align: center;/* posisi text ditengah */
+            padding: 40px; /* jarak antara text dengan border box */
+            font-size: 1.5em;/* ukuran font */
+            color: white;/* warna font */
+        }
+        .double{
+            flex-basis: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-colomn">
+            <div class="flex-row">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+            </div>
+            <div class="flex-row">
+                <div class="box">5</div>
+                <div class="box">6</div>
+                <div class="box double">7</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+body{
+    color: crimson;
+}
+a{
+    color: inherit; /*color dari body diwariskan ke elemen a*/
+    text-decoration: none;
+}

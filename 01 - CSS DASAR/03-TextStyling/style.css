@@ -1,0 +1,14 @@
+h1{
+    color: rgb(89, 112, 111); /*warna huruf */
+    text-align: center;/*posistioning */
+    letter-spacing: 5px; /*jarak antar huruf*/
+}
+p{
+    text-indent: 20px; /*paragraf menjorok kedalam*/
+    text-align: justify;/*positioning rata*/
+    text-transform: capitalize;/*awal kata huruf kapital*/
+    word-spacing: 10px;/*jarak antar kata*/
+}
+a{
+    text-decoration: none; /*menghilangkan dekorasi text*/
+}

@@ -1,0 +1,8 @@
+body{
+    background-color: lightblue;
+}
+p{
+    background-image: url(moroccan-flower.png); /*menambahkan background*/
+    background-repeat: no-repeat; /*pengulangan gambar*/
+    background-position: center center;/*posisi background*/
+}

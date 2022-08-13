@@ -1,0 +1,11 @@
+.container{
+    width: 600px;
+    margin: auto;
+    border: 5px solid black;
+}
+img{
+    float: right;
+}
+p{
+    text-align: justify;
+}

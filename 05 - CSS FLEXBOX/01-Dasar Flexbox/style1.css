@@ -1,0 +1,37 @@
+.container {
+    box-sizing: border-box;
+    width: 600px;
+    height: 600px;
+    border: 5px solid black;
+    display: flex;
+    margin: 30px auto;
+    padding: 5px;
+    flex-wrap: wrap;
+
+    /*posisi horizontal*/
+    /* justify-content: center; */
+
+    /*posisi vertikal 1 baris*/
+    /* align-items: center; */
+
+    /*posisi vertikal lebih dari 1 baris*/
+    /* align-content: center; */
+
+}
+
+.container div {
+    background-color: blue;
+    margin: 5px 5px;
+}
+
+.satu,
+.dua,
+.tiga,
+.empat,
+.lima {
+    flex-grow: 1;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    /* line-height: 150px; */
+}

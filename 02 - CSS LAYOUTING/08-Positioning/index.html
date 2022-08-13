@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Positioning</title>
+    <style>
+        .container {
+            height: 200vh;
+        }
+
+        .satu {
+            width: 100%;
+            height: 100px;
+            background-color: pink;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .border{
+            width: 400px;
+            height: 700px;
+            border: 5px solid crimson;
+            padding: 20px;
+            margin: 200px auto;
+            position: relative;
+        }
+        .border div{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+        }
+        .dua{
+            background-color: greenyellow;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .tiga{
+            background-color: aquamarine;
+            position: absolute; /*absolute berpindah dimensi dengan menghilangkan tempat asalnya*/
+            top: 0;
+            right: 0;
+            z-index: 2; /*mengatur tumpukan*/
+        }
+        .empat{
+            background-color: coral;
+            position: relative;/*relative berpindah dimensi menyisakan tempat asalnya*/
+            left: 100px;
+            top: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="satu"></div>
+        <div class="border">
+            <div class="dua"></div>
+            <div class="tiga"></div>
+            <div class="empat"></div>
+        </div>
+    </div>
+</body>
+
+</html>

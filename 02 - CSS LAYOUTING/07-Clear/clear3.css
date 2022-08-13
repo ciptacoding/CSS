@@ -1,0 +1,28 @@
+
+.container{
+    width: 800px;
+    margin: auto;
+    border: 5px solid black;
+    padding: 5px;
+}
+.satu{
+    width: 150px;
+    height: 500px;
+    background-color: lightblue;
+    float: left;
+}
+.dua{
+    width: 500px;
+    height: 500px;
+    background-color: lightgreen;
+    float: left;
+}
+.tiga{
+    width: 150px;
+    height: 500px;
+    background-color: salmon;
+    float: left;
+}
+.clear{/*membersihkan element float agar konten dianggap ada oleh container*/
+    clear: left;
+}

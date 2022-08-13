@@ -1,0 +1,18 @@
+.satu{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    margin: auto; 
+}
+.dua{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 20px 40px 30px 10px; /*urutan jarum jam*/
+}
+.tiga{
+    width: 50px;
+    height: 50px;
+    background-color: lightgreen;
+    margin-left: 100px;
+}

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 20px;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.gallery {
+  display: grid;
+  width: 80%;
+  margin: 30px auto;
+  list-style: none;
+  border: 10px solid white;
+  box-shadow: 0 0 7px 3px rgb(176, 176, 176);
+  /*  repeat = untuk mengulang jumlah kolom
+      auto-fit = value. ketika ada space maka kosong maka object akan dipindahkan untuk memenuhi kolom.
+      minMax = minimal dan maksimal ukuran sebuah objek/gambar */
+  grid-template-columns: repeat(auto-fit, minMax(120px, 1fr));
+  column-gap: 5px;
+}
+
+img {
+  /* ubah display gambar dari inline menjadi block agar bisa diatur */
+  display: block;
+  width: 100%;
+}

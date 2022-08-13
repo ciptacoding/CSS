@@ -1,0 +1,23 @@
+/* nilai selektor yang lebih besar akan menimpa nilai yang lebih kecil */
+
+p{ /* elemen p nilainya 001*/
+    color: crimson;
+}
+.p1, .p2, .p3{ /* class nilainya 010*/
+    color: aquamarine;
+}
+#paragraf p{ /* id dan sebuah elemen p nilainya 101*/
+    color: blue;
+}
+#paragraf .p2{/* id dan class nilainya 110*/
+    color: black;
+}
+
+#sarapan{/* nilai selektor 100*/
+    color: green;
+}
+ul#sarapan li.favorit{/* nilai selektor 112*/
+    color: orange;
+}
+
+/* perhitungan nilai selektor id class elemen*/

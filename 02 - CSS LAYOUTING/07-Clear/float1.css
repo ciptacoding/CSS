@@ -1,0 +1,14 @@
+.container{
+    width: 600px;
+    margin: auto;
+    border: 5px solid black;
+}
+img{
+    float: right;
+}
+p{
+    text-align: justify;
+}
+.clear{/*membersihkan elemen float agar konten dianggap ada*/
+    clear: right;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Flex Direction</title>
+    <style>
+        .container{ /* styling pada container */
+            display: flex; /* tampilan layar menjadi flex-item */
+            flex-direction: column; /* mengatur flex item horizontal atau vertikal */
+            height: 500px; /* tinggi container */
+            width: 800px; /* lebar container */
+            border: 5px solid crimson;  /* ketebalan, jenis border, warna */
+            border-radius: 10px; /* corner raounded */
+            background-color: aquamarine; /* warna latar */
+            margin: 0 auto;  /* posisi container menjadi ditengah */
+            padding: 10px; /* jarak antar elemen didalam container */
+            box-shadow: 10px 10px 10px 0px;  /* bayangan border/box */
+        }
+        .box{ /* styling pada elemen box */
+            border: 3px solid #222; /* ketebalan, tipe border, warna */
+            background-color: blanchedalmond;  /* warna latar */
+            margin: 10px; /* jarak antar container dengan box */
+            padding: 10px;  /* jarak didalam elemen box */
+            border-radius: 5px; /* corner rounded */
+        }
+        .first{ /* box pertama */
+            flex-grow: 3; /* elemen box akan menyesuaikan ukurannya sesuai parent containernya sesuai ukuran dari flex grow */
+        }
+        .second{ /* box kedua */
+            flex-grow: 2;
+        }
+        .third{ /* styling pada box ketiga */
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box first">
+
+        </div>
+        <div class="box second">
+
+        </div>
+        <div class="box third">
+
+        </div>
+    </div>
+</body>
+</html>

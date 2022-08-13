@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Transform</title>
+    <style>
+        /* 
+        scale(angka), scaleX(angka), scaleY(angka)
+        rotate(deg), rotateX(deg), rotateY(deg)
+        skew(deg), skewX(deg), skewY(deg)
+        translate(px), translateX(px), translateY(px)
+        */
+        .kotak{
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            background-color: lightblue;
+            transition: 1s; /*selalu simpan transisi di keadaan awal*/
+        }
+        .kotak:hover{
+            transform: scale(1.5) rotate(180deg) translateY(-100px);
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak"></div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nesciunt dolorum et. Necessitatibus maiores ducimus minus tempora blanditiis tempore eum assumenda eaque. Similique quis, odio nisi amet soluta laboriosam aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum obcaecati inventore sequi magni hic ipsam exercitationem, consequuntur voluptas, repellat ipsum quae quis reiciendis dolorem aperiam ea totam nobis dolorum consequatur?
+    </p>
+</body>
+</html>

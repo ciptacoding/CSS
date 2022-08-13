@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 50px auto;
+  display: grid;
+  width: 800px;
+  display: grid;
+  /* satuan yang dipakai fr, px, %, auto */
+  grid-template-columns: 1fr 2fr 35%;
+  grid-template-rows: 35% auto 35px;
+}
+
+.item {
+  width: 100%;
+  background-color: lightskyblue;
+}
+
+.container .item:nth-child(odd) {
+  background-color: salmon;
+}

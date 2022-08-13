@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.gambar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minMax(200px, 1fr));
+  list-style: none;
+  width: 80%;
+  margin: 30px auto;
+  border: 10px solid white;
+  box-shadow: 0 0 5px 3px darkgray;
+  gap: 5px;
+  row-gap: 10px;
+}
+
+.gambar li {
+  text-align: center;
+}

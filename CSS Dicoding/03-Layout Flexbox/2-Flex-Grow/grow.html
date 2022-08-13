@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan flex grow</title>
+    <style>
+        .container{ /* styling pada kelas pembungkus container */
+            display: flex; /* agar flex itemnya menjadi horizontal */
+            width: 800px; /* lebar container */
+            height: 300px; /* tinggi container */
+            border: 5px solid #222; /* ketebalan, jenis border, warna border */
+            border-radius: 10px; /* rounded corner */
+            background-color: aquamarine; /* warna latar */
+            margin: 0 auto; /* agar posisinya ditengah */
+            padding: 10px; /* jarak antar elemen didalamnya */
+        }
+        .box{
+            border: 3px solid #222; /* ketebalan, jenis border, warna border */
+            border-radius: 10px; /* rounded corner */
+            background-color: yellow; /* warna latar */
+            margin: 5px; /* jarak dari box dengan container */
+            padding: 20px; /* jarak didalam elemen box */
+            text-align: center; /* text ditengah */
+            line-height: 200px; /* agar posisi text ditengah secara horizontal */
+        }
+        .first{
+            flex-grow: 1; /* elemen box akan menyesuaikan ukurannya sesuai parent container */
+        }
+        .second{
+            flex-grow: 2; /* elemen box akan menyesuaikan ukurannya sesuai parent container namun class second akan terlihat besar sendiri karena flex grownya 2*/
+        }
+        .third{
+            flex-grow: 1; /* elemen box akan menyesuaikan ukurannya sesuai parent container */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box first"> 
+            <p>FLEX-GROW: 1</p>
+        </div>
+        <div class="box second">
+            <p>FLEX-GROW: 2</p>
+        </div>
+        <div class="box third">
+            <p>FLEX-GROW: 1</p>
+        </div>
+    </div>
+</body>
+</html>

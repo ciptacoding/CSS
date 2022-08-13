@@ -1,0 +1,33 @@
+.hello:link{/*default dari a*/
+    color: orange;
+}
+.hello:hover{/*ketika tombol diarahkan ke class hello*/
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.hello:active{ /*ketika di klik*/
+    font-style: italic;
+}
+.hello:visited{/*ketika class hello sudah pernah dikunjungi*/
+    color: crimson;
+}
+li:first-child a{ /* elemen a pertama dari parent li*/
+    color: yellow;
+}
+li:last-child a{/* elemen a terakhir dari parent li*/
+    color: brown;
+}
+li:nth-child(3) a{/* elemen a ketiga dari parent li*/
+    color: green;
+}
+li:nth-child(4n){/* elemen a kelipatan 4 dari parent li*/
+    color: aqua;
+}
+p:first-of-type{/* tipe pertama dari elemen p*/
+    color: crimson;
+}
+p:last-of-type{/* tipe terakhir dari elemen p*/
+    color: green;
+    font-size: 30px;
+}

@@ -1,0 +1,13 @@
+nav{
+    background-color: pink;
+}
+nav li{
+    display: inline ;
+}
+main{
+    width: 50%;
+    background-color: lightgreen;
+}
+main span{
+    background-color: lightblue;
+}

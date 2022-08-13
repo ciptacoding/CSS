@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+    /*box sizing digunakan agar ukuran box tetap walaupun diberikan padding*/
+}
+div{
+    width: 600px;
+    background-color: pink;
+    padding: 20px 30px; /*atas-bawah, kiri-kanan*/
+    margin: 20px auto;/*atas-bawah, kiri-kanan auto*/
+}

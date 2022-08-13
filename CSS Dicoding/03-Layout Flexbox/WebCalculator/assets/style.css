@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;/* menetapkan semua ukuran elemen menjadi border box model */
+}
+body{
+    font-family: sans-serif;/* jenis keluarga huruf */
+}
+.flex-container-column{/* styling pada class column */
+    display: flex;/* merubah tampilan menjadi flexible */
+    flex-direction: column;/*merubah arah tampilan menjadi column atau kebawah*/
+    max-width: 800px;/* max-width berfungsi untuk responsive mobile */
+    margin: 0 auto;/* margin on posisi ditengah */
+    text-align: right;/* posisi text dikanan */
+}
+.flex-container-row{/* styling pada class row */
+    display: flex;/* merubah tampilan menjadi flexible */
+}
+.button{/* styling pada button */
+    flex-basis: 25%;/* pembagian area tiap button sesuai parent */
+    border: 1px solid black;/*keteblan, tipe, warna  */
+    font-size: 1.5em;/*ukuran huruf*/
+    text-align: center;/*posisi text ditengah*/
+    padding: 40px;/*jarak didalam elemen button*/
+    background: -webkit-linear-gradient(top, #d2d2d2, #ddd);/*warna latar*/
+    cursor: pointer;/*cursor berubah*/
+}
+.double{/*styling pada class double*/
+    flex-basis: 50%;/*membagi button menjadi 50% sesuai parentnya*/
+}
+.display{/*styling pada class display*/
+    color: white;/*warna huruf*/
+    width: 100%;/*lebar*/
+    background-color: #222;/*warna latar*/
+    font-size: 2em;/*ukuran font*/
+    padding: 20px;/*jarak didalam elemen display*/
+    border: 2px solid black;/*ketebalan tipe warna*/
+}
+.operator, .negative, .equals{/*styling pada class operator dst*/
+    background: orange;/*warna latar oranye*/
+}
+.card{/*styling pada class card*/
+    box-shadow: 0px 4px 8px 0px black;/*bayangan pada card*/
+    border-radius: 5px;/*rounded corner*/
+    padding: 30px;/*jarak antara elemen card dan column*/
+    margin-top: 20px;/*jarak antara card dan bagian atas browser*/
+}
+.button:hover{/*ketika kursor berada di button*/
+    font-weight: bold;/*maka hurufnya berubah menjadi tebal*/
+}
+@media screen and (max-width: 513px){/*mengatur responsive pada mobile*/
+    .button{/*karena button paddingnya telalu besar*/
+        padding: 10px;/*ketika layar dibawah 513px maka padding pada button akan menjadi 10px*/
+    }
+}

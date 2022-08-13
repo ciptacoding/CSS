@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Flex Container</title>
+    <style>
+        .container{
+            display: flex;/* agar elemen box menjadi flex-item horizontal dengan ukuran otomatis menyesuaikan parentnya */
+            width: 800px; /* lebar border container */
+            height: 250px; /* tinggi border */
+            border: 5px solid #222; /* ketebalan, jenis border, warna */
+            border-radius: 10px; /* corner rounded */
+            background-color: aquamarine; /* latar */
+            padding: 10px; /* jarak antar elemen didalamnya */
+            margin: 0 auto; /* posisi border otomatis ditengah */
+        }
+        .box{
+            flex-grow: 1; /* elemen box akan menyesuaikan ukurannya sesuai parent container */
+            border: 2px solid black; /* keetebalan, tipe border, warna */
+            border-radius: 10px; /* rounded corner */
+            background-color: bisque; /* waarna latar */ 
+            margin: 5px; /* jarak box ke container */
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> <!--parent-->
+        <div class="box"></div> <!--child-->
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

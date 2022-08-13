@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Transition</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 1400px;
+            border: 5px solid black;
+            margin: 10px;
+        }
+        .kotak{
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            margin-bottom: 10px;
+        }
+        .kotak1{
+            transition: ease 3s;
+        }
+        .kotak2{
+            transition: ease-in 3s;
+        }
+        .kotak3{
+            transition: ease-in-out 3s;
+        }
+        .kotak4{
+            transition: ease-out 3s;
+        }
+        .kotak5{
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+        }
+        .container:hover .kotak{
+            transform: rotate(720deg); /*rotasi 720 derajat*/
+            margin-left: 1300px; /*perubahan yang terjadi*/
+            background-color: yellow;/*perubahan yang terjadi*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="kotak kotak1">ease</div>
+        <div class="kotak kotak2">ease in</div>
+        <div class="kotak kotak3">ease in out</div>
+        <div class="kotak kotak4">ease out</div>
+        <div class="kotak kotak5">cubic-bezier</div>
+    </div>
+</body>
+</html>
